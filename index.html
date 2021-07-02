@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Revengers Survey Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Tokyo Revengers Survey Form </h1>
+    <p id="description">Please Fill The Form,thank you.</p>
+    <form id="survey-form">
+
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Enter your name" required >
+        </label>
+
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </label>
+
+        <label for="number"id="number-label">
+            Age
+            <input type="number" id="number" placeholder="How old are you?"
+            required
+            min="18";
+            max="50";
+            >
+        </label>
+
+        <label for="dropdown"id="dropdown-label">
+            How do you know tokyo revangers?
+            <select id="dropdown">
+                <option >test1</option>
+                <option >test2</option>
+            </select>
+            
+        </label>
+
+        <label for="member"id="member-label">
+            who is your favorite member?<br>
+
+           <input type="radio"name="member" value="1" checked >Micky <br>
+           <input type="radio"name="member" value="2">Draken <br>
+           <input type="radio"name="member" value="3">Kisaki <br>
+           <input type="radio"name="member" value="4">Takemichi <br>
+
+           <label for="scene"id="scene-label">
+            Please choose your favorite scene? <br>
+           <input value="2" type="checkbox"name="Takemichi-revengers">Takemichi revengers <br>
+           <input value="3" type="checkbox"name="Kisaki-story">Kisaki story <br>
+           <input value="4" type="checkbox"name="Draken-arch">Draken arch <br>
+
+        </label>
+        <br>
+        <label for="comments"id="comments-label">
+            Any comments or suggestions?
+            <textarea  id="comments" cols="30" rows="10"></textarea>
+        </label> <br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
